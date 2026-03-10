@@ -24,9 +24,9 @@ fi
 if [ -d "/docker-entrypoint-initdb.d/sql" ]; then
     echo "Applying SQL schemas from /docker-entrypoint-initdb.d/sql"
 
-    # Apply suitecrm schema to membercommons database (primary CRM)
+    # Apply suitecrm schema to Member Database (primary CRM)
     if [ -f "/docker-entrypoint-initdb.d/sql/suitecrm-postgres.sql" ]; then
-        echo "  Applying suitecrm-postgres.sql to membercommons database"
+        echo "  Applying suitecrm-postgres.sql to Member Database"
         psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname=membercommons -f /docker-entrypoint-initdb.d/sql/suitecrm-postgres.sql
 
         echo "  Applying suitecrm-postgres.sql to suitecrm database"
