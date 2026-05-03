@@ -2,3 +2,4 @@
 .env.dev
 .env.production
 *.env
+.DS_Store
