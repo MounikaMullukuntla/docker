@@ -15,16 +15,58 @@
 #   3. {webroot}/{repo}/webroot.yaml  ← shared code starter defaults
 
 
-# SITE IDENTITY
-site:
-  title: "My Site"
-  description: ""
-  base_url: "https://example.com"
-  # Firebase: matches "site" in firebase.json (multi-site projects)
-  # Netlify:  matches site name in Netlify UI
-  # Vercel:   matches project name in vercel.json
-  platform_id: "my-site-default"
+# SITES — all sites sharing this webroot; default indicates the active site
+default: model.earth
 
+sites:
+  dreamstudio:
+    title: "DreamStudio"
+    base_url: "https://dreamstudio.com"
+    domain_contains: "dreamstudio.com,planet.live"
+    favicon: "/localsite/img/logo/dreamstudio/favicon.png"
+    visibility: "local"
+  model.earth:
+    title: "Model Earth"
+    base_url: "https://model.earth"
+    favicon: "/localsite/img/logo/modelearth/model-earth.png"
+  model.africa:
+    title: "Model Africa"
+    base_url: "https://model.earth"
+  model.europe:
+    title: "Model Europe"
+    base_url: "https://model.earth"
+  model.canada:
+    title: "Model Canada"
+    base_url: "https://model.earth"
+  model.china:
+    title: "Model China"
+    base_url: "https://model.earth"
+  model.india:
+    title: "Model India"
+    base_url: "https://model.earth"
+  model.usa:
+    title: "Model USA"
+    base_url: "https://model.earth"
+  model.georgia:
+    title: "Model Georgia"
+    base_url: "https://model.georgia.org"
+    domain_contains: "model.georgia,georgia.org,locations.pages.dev"
+    favicon: "/localsite/img/logo/states/GA-favicon.png"
+  model.maine:
+    title: "Model Maine"
+    base_url: "https://model.earth"
+  neighborhood.org:
+    title: "Neighborhood"
+    base_url: "https://neighborhood.org"
+    domain_contains: "neighborhood.org"
+    favicon: "/localsite/img/logo/neighborhood/favicon.png"
+    visibility: "local"
+  democracylab:
+    title: "DemocracyLab"
+    base_url: "https://democracylab.org"
+    domain_contains: "democracylab"
+    favicon: "/localsite/img/logo/democracylab/favicon.png"
+    visibility: "local"
 
 # yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
 
