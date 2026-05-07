@@ -1,6 +1,6 @@
 # webroot.yaml
 
-A platform-neutral deployment configuration standard for static and JAMstack sites. One file replaces the platform-specific configs you'd otherwise maintain separately for each host.
+A platform-neutral deployment configuration standard for static and JAMstack sites. One file replaces the platform-specific configs you'd otherwise maintain separately for each host. [Learn more](https://claude.ai/share/2742f285-550e-44ce-bec2-d5f1c7bac38a)
 
 | Platform | Files replaced |
 |---|---|
