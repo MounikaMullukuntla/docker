@@ -50,8 +50,9 @@ sites:
   model.georgia:
     title: "Model Georgia"
     base_url: "https://model.georgia.org"
-    domain_contains: "model.georgia,georgia.org,locations.pages.dev"
+    domain_contains: "model.georgia.org"
     favicon: "/localsite/img/logo/states/GA-favicon.png"
+    sideNavLive: false
   model.maine:
     title: "Model Maine"
     base_url: "https://model.earth"
