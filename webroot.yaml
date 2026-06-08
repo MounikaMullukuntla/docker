@@ -15,6 +15,9 @@
 #   3. {webroot}/{repo}/webroot.yaml  ← shared code starter defaults
 
 
+# For upcoming https://github.com/garmartirosy/pipeline
+pipeline: data-pipeline/nodes.csv
+
 # SITES — all sites sharing this webroot; default indicates the active site
 default: model.earth
 
